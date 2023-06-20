@@ -8,6 +8,8 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { ProdutosComponent } from './componentes/produtos/produtos.component';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CategoriasComponent } from './componentes/categorias/categorias.component';
+import { FacilidadesComponent } from './componentes/facilidades/facilidades.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CabecalhoComponent,
     RodapeComponent,
     ProdutosComponent,
-    BannerComponent
+    BannerComponent,
+    CategoriasComponent,
+    FacilidadesComponent
   ],
   imports: [
     BrowserModule,
