@@ -1,5 +1,18 @@
-
+*{
+  width: 100%;
+  min-width: 375px;
+}
 .banner
 {
   width: 100%;
+}
+
+
+
+.t2{
+position: relative;
+}
+
+.tst{
+  position: absolute;
 }

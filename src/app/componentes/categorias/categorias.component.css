@@ -1,25 +1,28 @@
 section{
   margin-top: 78px;
-  width: 1110px;
-  margin: auto 165px;
-
-}
+  /* max-width: 1110px; */
+  /* margin: auto 165px; */
+  min-width: 375px;
+  }
 
 .categoria{
   text-align: center;
   margin-bottom: 32px;
-  width: 100%;
 
+
+}
+
+.lista-categoria
+{
+  display: flex;
+  flex-wrap: wrap
 }
 
 ul.lista-categoria {
   justify-content: space-between;
   padding: 0;
   list-style: none;
-  display: flex;
   gap: 30px;
-
-
 
 }
 
@@ -29,4 +32,16 @@ ul.lista-categoria {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+
 }
+
+
+/* @media (min-width: 500px) {
+
+section{
+
+}
+} */
+
+
+
