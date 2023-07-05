@@ -7,12 +7,23 @@
   width: 100%;
 }
 
-
-
-.t2{
-position: relative;
+.carousel-caption{
+  text-align: start;
+  width: 1100px;
+  margin-bottom: 4.8rem;
 }
 
-.tst{
-  position: absolute;
+.rosa{
+   text-align: end;
+  width: 1100px;
+  margin-bottom: 6.5rem;
+  padding-right: 50px;
+
+}
+
+@media (max-width: 756px) {
+  .banner{
+    display: flex;
+  }
+
 }

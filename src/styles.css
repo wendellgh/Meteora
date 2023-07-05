@@ -3,10 +3,10 @@
 
 :root{
  max-width: 1440px;
- 
+
 
  margin: auto;
- font-family: Inter;
+font-family: 'Inter', sans-serif;
 
  border: 2px solid red;
 }

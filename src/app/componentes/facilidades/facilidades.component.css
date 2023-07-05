@@ -2,7 +2,7 @@
   background-color: #000;
   color: #fff;
   text-align: center;
-  height: 238px;
+  height: 100%;
    padding-bottom: 40px;
    width: 100%;
 }
@@ -32,4 +32,26 @@ img{
 {
   display: flex;
   align-items: center;
+}
+
+
+@media (max-width: 800px) {
+
+  .facilidades ul {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 60px;
+  }
+
+
+
+
+}
+
+@media (max-width: 375px) {
+  .lista-item, .facilidades {
+
+      display: inline-flex;
+  }
+
 }

@@ -1,0 +1,31 @@
+.news {
+  height: 321px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.fomulario {
+  border: 5px solid #000;
+  text-align: center;
+  width: 729px;
+  height: 190px;
+  margin:65px auto;
+  padding: 40px;
+  font-weight: 400;
+}
+
+#newslatter{
+  width: 456px;
+  height: 38px;
+  border-radius: none;
+}
+.botao{
+  height: 38px;
+  border: none;
+  background-color: #9353ff;
+  color: #fff;
+}
+
+
