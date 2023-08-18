@@ -1,7 +1,17 @@
 <section>
   <h2 class="titulo">Produtos que estão bombando!</h2>
 
-  <ul class="lista-produtos">
+  <div *ngFor="let item of itens">
+    <a>
+      <img [src]="item.imagem" alt="">
+    </a>
+    <h3>{{ item.titulo }}</h3>
+    <p>{{ item.descricao }}</p>
+    <p>Preço: {{ item.preco }}</p>
+
+  </div>
+
+  <!-- <ul class="lista-produtos">
 
     <li>
       <a href="http://">
@@ -83,5 +93,5 @@
     </li>
 
 
-  </ul>
+  </ul> -->
 </section>
