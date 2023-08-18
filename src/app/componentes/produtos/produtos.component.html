@@ -1,15 +1,23 @@
 <section>
   <h2 class="titulo">Produtos que estão bombando!</h2>
 
-  <div *ngFor="let item of itens">
-    <a>
-      <img [src]="item.imagem" alt="">
-    </a>
-    <h3>{{ item.titulo }}</h3>
-    <p>{{ item.descricao }}</p>
-    <p>Preço: {{ item.preco }}</p>
+  <ul class="lista-produtos">
+    <li *ngFor="let item of itens">
+      <a>
+        <img [src]="item.imagem" alt="">
+      </a>
+      <div class="descricao">
+        <h5><b>{{ item.titulo }}</b></h5>
+        <p>{{ item.descricao }}</p>
+        <span><b> {{ item.preco | currency}}</b></span>
+        <br>
+        <button class="botao" (click)="teste()">Ver mais</button>
+      </div>
+    </li>
+  </ul>
 
-  </div>
+
+
 
   <!-- <ul class="lista-produtos">
 

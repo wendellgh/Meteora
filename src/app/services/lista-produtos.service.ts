@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, map, tap } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
-import { Interface } from '../componentes/interface';
+import { Produtos } from '../componentes/interface_produtos';
 
 @Injectable({
   providedIn: 'root',
@@ -14,9 +14,8 @@ export class ListaProdutosService {
 
   constructor(private http: HttpClient) {}
 
-  getProdutos(): Observable<Interface[]> {
-    return this.http.get<Interface[]>(this.mock_Api).pipe(
-      tap((retorno) => console.log('Vem do Tap', retorno)),
+  getProdutos(): Observable<Produtos[]> {
+    return this.http.get<Produtos[]>(this.mock_Api).pipe(
       map((resultado) =>
         resultado.map((item) => ({
           id: item.id,
@@ -25,9 +24,7 @@ export class ListaProdutosService {
           descricao: item.descricao,
           imagem: item.imagem,
         }))
-      ),
-      tap((r) => console.log('pos map', r))
+      )
     );
   }
 }
-
