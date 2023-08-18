@@ -3,5 +3,5 @@ export interface Interface {
   titulo: string
   preco: number
   descricao: string
-  imagem: URL
+  imagem: string
 }
