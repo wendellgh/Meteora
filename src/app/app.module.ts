@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
@@ -13,7 +12,9 @@ import { BannerComponent } from './componentes/banner/banner.component';
 import { CategoriasComponent } from './componentes/categorias/categorias.component';
 import { FacilidadesComponent } from './componentes/facilidades/facilidades.component';
 import { NewsComponent } from './componentes/news/news.component';
-import { ModalProdutosComponent } from './componentes/modal-produtos/modal-produtos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,15 +26,16 @@ import { ModalProdutosComponent } from './componentes/modal-produtos/modal-produ
     CategoriasComponent,
     FacilidadesComponent,
     NewsComponent,
-    ModalProdutosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-
+    BrowserAnimationsModule,
+    MatDialogModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
