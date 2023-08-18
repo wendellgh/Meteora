@@ -5,42 +5,42 @@
       "titulo":"Camiseta Conforto",
       "preco": 70.00,
       "descricao": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
-      "imagem": "../src/assets/Desktop/Imagens Cards/Camisa.png"
+      "imagem": "../../../assets/Desktop/Imagens Cards/Camiseta.png"
     },
     {
       "id":2,
       "titulo":"Calça Alfaiataria",
       "preco": 180.00,
       "descricao": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
-      "imagem": "../src/assets/Desktop/Imagens Cards/Calça.png"
+      "imagem": "../../../assets/Desktop/Imagens Cards/Calca.png"
     },
     {
       "id":3,
       "titulo":"Tênis Chunky",
       "preco": 250.00,
       "descricao": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex",
-      "imagem": "../src/assets/Desktop/Imagens Cards/Tenis.png"
+      "imagem": "../../../assets/Desktop/Imagens Cards/Tenis.png"
     },
     {
       "id":4,
       "titulo":"Jaqueta Jeans",
       "preco": 150.00,
       "descricao": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
-      "imagem": "../src/assets/Desktop/Imagens Cards/Jaqueta.png"
+      "imagem": "../../../assets/Desktop/Imagens Cards/Jaqueta.png"
     },
     {
       "id":5,
       "titulo":"Óculos Redondo",
       "preco": 120.00,
       "descricao": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
-      "imagem": "../src/assets/Desktop/Imagens Cards/Oculos.png"
+      "imagem": "../../../assets/Desktop/Imagens Cards/oculos.png"
     },
     {
       "id":6,
       "titulo":"Bolsa coringa",
       "preco": 120.00,
       "descricao": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
-      "imagem": "../src/assets/Desktop/Imagens Cards/Bolsa.png"
+      "imagem": "../../../assets/Desktop/Imagens Cards/Bolsa.png"
     }
   ]
 }
