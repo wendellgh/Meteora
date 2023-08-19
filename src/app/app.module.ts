@@ -15,6 +15,9 @@ import { NewsComponent } from './componentes/news/news.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
+import { ProdutosModalComponent } from './componentes/produtos-modal/produtos-modal.component';
+
+
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     CategoriasComponent,
     FacilidadesComponent,
     NewsComponent,
+    ProdutosModalComponent,
+
   ],
   imports: [
     BrowserModule,

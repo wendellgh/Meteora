@@ -11,15 +11,19 @@
         <p>{{ item.descricao }}</p>
         <span><b> {{ item.preco | currency}}</b></span>
         <br>
-        <button class="botao" (click)="teste()">Ver mais</button>
+        <button class="botao" (click)="onModalChange(true)">Ver mais</button>
+      </div>
+      <div *ngIf="modalAberto">
+        <app-produtos-modal (mudouModal)="onModalChange($event)"></app-produtos-modal>
       </div>
     </li>
   </ul>
 
 
 
+<!--
 
-  <!-- <ul class="lista-produtos">
+ <ul class="lista-produtos">
 
     <li>
       <a href="http://">
@@ -101,5 +105,5 @@
     </li>
 
 
-  </ul> -->
-</section>
+  </ul>
+</section> -->

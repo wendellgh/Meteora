@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-import { ModalProdutosComponent } from '../modal-produtos/modal-produtos.component';
+
 import { ListaProdutosService } from 'src/app/services/lista-produtos.service';
 import { Produtos } from '../interface_produtos';
 
@@ -12,7 +12,8 @@ import { Produtos } from '../interface_produtos';
 export class ProdutosComponent implements OnInit {
   constructor(private service: ListaProdutosService) {}
 
-  itens: Produtos[] = [];
+  @Input()itens: Produtos[] = [];
+  modalAberto!: boolean;
 
   ngOnInit(): void {
     this.service.getProdutos().subscribe({
@@ -27,6 +28,14 @@ export class ProdutosComponent implements OnInit {
 
   teste(){
     alert('Oi,teste')
+  }
+
+
+
+  onModalChange(evento: boolean) {
+    this.modalAberto = evento;
+    console.log('Abrir modal');
+
   }
 
 
