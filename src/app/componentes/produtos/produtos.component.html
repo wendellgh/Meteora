@@ -14,96 +14,10 @@
         <button class="botao" (click)="onModalChange(true)">Ver mais</button>
       </div>
       <div *ngIf="modalAberto">
-        <app-produtos-modal (mudouModal)="onModalChange($event)"></app-produtos-modal>
+        <app-produtos-modal [itens]="itens" (mudouModal)="onModalChange($event)" ></app-produtos-modal>
       </div>
     </li>
   </ul>
 
+</section>
 
-
-<!--
-
- <ul class="lista-produtos">
-
-    <li>
-      <a href="http://">
-        <img src="../../../assets/Desktop/Imagens Cards/Camiseta.png" alt="">
-      </a>
-      <div class="descricao">
-        <h5><b>Camiseta Conforto</b></h5>
-        <p>Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
-        <span><b> R$ 70,00</b></span>
-        <br>
-        <button class="botao" (click)="chamaApi()">Ver mais</button>
-      </div>
-
-    </li>
-
-    <li>
-      <a routerLink="/modal">
-        <img src="../../../assets/Desktop/Imagens Cards/Calça.png" alt="">
-      </a>
-      <div class="descricao">
-        <h5><b>Calça Alfaiataria</b></h5>
-        <p>Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
-        <span><b> R$ 180,00</b></span>
-        <br>
-        <button class="botao">Ver mais</button>
-      </div>
-    </li>
-
-    <li>
-      <a href="http://">
-        <img src="../../../assets/Desktop/Imagens Cards/Tenis.png" alt="">
-      </a>
-      <div class="descricao">
-        <h5><b>Tênis Chunky</b></h5>
-        <p>Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
-        <span><b> R$ 250,00</b></span>
-        <br>
-        <button class="botao">Ver mais</button>
-      </div>
-    </li>
-
-    <li>
-      <a href="http://">
-        <img src="../../../assets/Desktop/Imagens Cards/Jaqueta.png" alt="">
-      </a>
-      <div class="descricao">
-        <h5><b>Jaqueta Jeans</b></h5>
-        <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
-        <span><b> R$ 150,00</b></span>
-        <br>
-        <button class="botao">Ver mais</button>
-      </div>
-    </li>
-
-    <li>
-      <a href="http://">
-        <img src="../../../assets/Desktop/Imagens Cards/óculos.png" alt="">
-      </a>
-      <div class="descricao">
-        <h5><b>Óculos Redondo</b></h5>
-        <p>Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
-        <span><b> R$ 120,00</b></span>
-        <br>
-        <button class="botao">Ver mais</button>
-      </div>
-    </li>
-
-    <li>
-      <a href="http://">
-        <img src="../../../assets/Desktop/Imagens Cards/Bolsa.png" alt="">
-      </a>
-      <div class="descricao">
-        <h5><b>Bolsa coringa</b></h5>
-        <p>Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
-        <span><b> R$ 120,00</b></span>
-        <br>
-        <button class="botao">Ver mais</button>
-      </div>
-    </li>
-
-
-  </ul>
-</section> -->

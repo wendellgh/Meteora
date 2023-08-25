@@ -1,23 +1,32 @@
 <section *ngIf="statusModal" class="container {{ esconderScroll() }}">
-  <div class="card">
-    <img class="imagem" alt="Capa do livro">
-    <div class="info-card">
-      <p class="titulo"></p>
-      <p class="informacoes">Autoria:</p>
-      <p class="resultado"></p>
-      <p class="informacoes">Data de publicação:</p>
-      <p class="resultado"></p>
-      <p class="informacoes">Editora:</p>
-      <p class="resultado"></p>
-      <button  class="detalhes">Ler prévia</button>
-    </div>
-      <button (click)="fecharModal()" class="botao-fechar" >
-        <span class="material-symbols-outlined">close</span>
+
+  <div class="card ">
+    <div class="header info-card">
+      <p>
+        Confira detalhes sobre o produto:
+      </p>
+      <button (click)="fecharModal()" class="botao-fechar">
+        <span class="material-symbols-outlined">X</span>
       </button>
-    <div class="sinopse">
-      <h4 class="informacoes">Sinopse</h4>
-      <p class="resultado"></p>
     </div>
+
+    <div class="imagem" *ngFor="let item of itens">
+      <div class="">
+        <img src="{{item.imagem}}" alt="Imagem do Produto">
+      </div>
+
+      <div class="">
+        <p class="titulo">{{item.titulo}}</p>
+        <p class="informacoes">{{item.descricao}}</p>
+        <p class="resultado">{{item.preco | currency: 'BRL'}}</p>
+        <p class="informacoes">Cores:</p>
+        <p class="resultado">Tamanho:</p>
+        <button class="detalhes">Adicionar à sacola</button>
+        <button class="btn btn-danger">TEste</button>
+      </div>
+
+    </div>
+
   </div>
   <div class="overlay"></div>
 </section>

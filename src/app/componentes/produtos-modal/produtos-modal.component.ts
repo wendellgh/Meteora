@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Produtos } from '../interface_produtos';
 
 const body = document.querySelector('body');
 
@@ -7,8 +9,11 @@ const body = document.querySelector('body');
   templateUrl: './produtos-modal.component.html',
   styleUrls: ['./produtos-modal.component.css'],
 })
-export class ProdutosModalComponent {
+export class ProdutosModalComponent implements OnInit {
+  ngOnInit(): void {}
+
   statusModal: boolean = true;
+  @Input()itens: Produtos[] = [];
   @Output() mudouModal = new EventEmitter();
 
   fecharModal() {
@@ -26,4 +31,6 @@ export class ProdutosModalComponent {
       }
     }
   }
+
+
 }
